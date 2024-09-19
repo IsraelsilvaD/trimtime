@@ -2,7 +2,7 @@ const mongoose = require('mangoose');
 const Schema = mongoose.Schema;
 
 const horario = new Schema({
-    salaoid:{
+   barbeariaid:{
         type: mongoose.tyes.objecId,  // Aqui fala que o id tem que ser existente e valido no model correspondente.
         ref: 'barbearia', // Relacionamento.
         required: true,

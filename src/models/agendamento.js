@@ -39,7 +39,7 @@ colaboradorid: {
    },
    transactionid: {
     type: String,
-    required: true,
+    required: false,
    },
         dataCadastro: {
             type: Date,

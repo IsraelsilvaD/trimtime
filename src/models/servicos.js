@@ -2,7 +2,7 @@ const mongoose = require('mangoose');
 const Schema = mongoose.Schema;
 
 const servico = new Schema({
-salaoid:{
+barbeariaid:{
 type: mongoose.tyes.objecId,  // Aqui fala que o id tem que ser existente e valido no model correspondente.
 ref: 'barbearia', // Relacionamento.
 required: true,
@@ -15,10 +15,7 @@ preco: {
     type: Number,
     required: true,
 },
-comissao: {        // Porcentagem sobre o valor do preço.
-    type: Number,
-    required: true,
-},
+
 duracao: {          // Duração em minutos.
     type: Number,
     required: true,
